@@ -47,11 +47,15 @@ function convertDataToOctets(data) {
 
 function formatOctets(bytes, decimals = 2) {
     if (bytes === 0) return '~0';
+    const sign = bytes < 0 ? '-' : '';
+    bytes = Math.abs(bytes);
     const k = 1024;
     const dm = decimals < 0 ? 0 : decimals;
     const sizes = ['Octets', 'Ko', 'Mo', 'Go', 'To', 'Po', 'Eo', 'Zo', 'Yo'];
     const i = Math.floor(Math.log(bytes) / Math.log(k));
-    return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + sizes[i];
+    return (
+        sign + parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + sizes[i]
+    );
 }
 
 function getGap(up, down) {

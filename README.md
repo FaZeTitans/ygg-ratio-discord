@@ -1,5 +1,14 @@
 # YGG Ratio Discord
 
+> [!CAUTION]
+> **PROJET ARCHIVÉ — YGGtorrent n'existe plus.**
+>
+> En 2025, les serveurs de YGGtorrent (6,6 millions d'utilisateurs) ont été compromis, vidés puis détruits. Le site est définitivement hors-ligne. Pour plus d'informations : [yggleak.top](https://yggleak.top/fr).
+>
+> Ce projet n'est donc plus fonctionnel et ne sera plus maintenu.
+
+---
+
 ## Description
 
 **YGG Ratio Discord** est un projet automatisé permettant de récupérer quotidiennement le ratio YGG Torrent et de le publier sur un webhook Discord. Publication tous les jours à 00h00 AM (minuit).
